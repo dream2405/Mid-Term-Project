@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark-subtle" th:fragment="nav">
+    <div class="container text-center">
+        <a class="navbar-brand" th:href="@{/}">
+            <img src="/img/magnifier-glass.svg" alt="Logo" width="30" height="30" class="d-inline-block">
+            나에 관해
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${tabMenu == 'intro' ? 'active' : ''}" th:href="@{/intro}">개요</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${tabMenu == 'pics' ? 'active' : ''}" th:href="@{/pics}">사진들</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${tabMenu == 'hobby' ? 'active' : ''}" th:href="@{/hobby}">취미/특기</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
