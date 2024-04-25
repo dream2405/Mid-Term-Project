@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark-subtle" th:fragment="nav">
+<nav class="navbar navbar-expand-sm bg-dark-subtle shadow" th:fragment="nav">
     <div class="container text-center">
         <a class="navbar-brand" th:href="@{/}">
             <img src="/img/magnifier-glass.svg" alt="Logo" width="30" height="30" class="d-inline-block">
@@ -16,10 +16,7 @@
                 <a class="nav-link" th:classappend="${tabMenu == 'history' ? 'active' : ''}" th:href="@{/history}">이력</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:classappend="${tabMenu == 'specialty' ? 'active' : ''}" th:href="@{/specialty}">특기</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:classappend="${tabMenu == 'hobby' ? 'active' : ''}" th:href="@{/hobby}">취미</a>
+                <a class="nav-link" th:classappend="${tabMenu == 'like' ? 'active' : ''}" th:href="@{/like}">좋아하는 것</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" th:classappend="${tabMenu == 'link' ? 'active' : ''}" th:href="@{/link}">링크</a>

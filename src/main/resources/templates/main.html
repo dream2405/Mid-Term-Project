@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,8 @@
         <span th:if="${tabMenu == 'history'}">
             <th:block th:replace="~{tabFrag/history :: history}"></th:block>
         </span>
-        <span th:if="${tabMenu == 'specialty'}">
-            <th:block th:replace="~{tabFrag/specialty :: specialty}"></th:block>
-        </span>
-        <span th:if="${tabMenu == 'hobby'}">
-            <th:block th:replace="~{tabFrag/hobby :: hobby}"></th:block>
+        <span th:if="${tabMenu == 'like'}">
+            <th:block th:replace="~{tabFrag/like :: like}"></th:block>
         </span>
         <span th:if="${tabMenu == 'link'}">
             <th:block th:replace="~{tabFrag/link :: link}"></th:block>
