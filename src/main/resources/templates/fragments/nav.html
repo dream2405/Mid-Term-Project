@@ -13,13 +13,16 @@
         </a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" th:classappend="${tabMenu == 'intro' ? 'active' : ''}" th:href="@{/intro}">개요</a>
+                <a class="nav-link" th:classappend="${tabMenu == 'history' ? 'active' : ''}" th:href="@{/history}">이력</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:classappend="${tabMenu == 'pics' ? 'active' : ''}" th:href="@{/pics}">사진들</a>
+                <a class="nav-link" th:classappend="${tabMenu == 'specialty' ? 'active' : ''}" th:href="@{/specialty}">특기</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:classappend="${tabMenu == 'hobby' ? 'active' : ''}" th:href="@{/hobby}">취미/특기</a>
+                <a class="nav-link" th:classappend="${tabMenu == 'hobby' ? 'active' : ''}" th:href="@{/hobby}">취미</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${tabMenu == 'link' ? 'active' : ''}" th:href="@{/link}">링크</a>
             </li>
         </ul>
     </div>

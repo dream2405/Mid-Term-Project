@@ -9,18 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>asdfsafdfasdasdf</h1>
     </header>
     <th:block th:replace="~{fragments/nav :: nav}"></th:block>
     <main>
-        <span th:if="${tabMenu == 'intro'}">
-            <th:block th:replace="~{tabFrag/intro :: intro}"></th:block>
+        <span th:if="${tabMenu == 'history'}">
+            <th:block th:replace="~{tabFrag/history :: history}"></th:block>
         </span>
-        <span th:if="${tabMenu == 'pics'}">
-            <th:block th:replace="~{tabFrag/pics :: pics}"></th:block>
+        <span th:if="${tabMenu == 'specialty'}">
+            <th:block th:replace="~{tabFrag/specialty :: specialty}"></th:block>
         </span>
         <span th:if="${tabMenu == 'hobby'}">
             <th:block th:replace="~{tabFrag/hobby :: hobby}"></th:block>
+        </span>
+        <span th:if="${tabMenu == 'link'}">
+            <th:block th:replace="~{tabFrag/link :: link}"></th:block>
         </span>
     </main>
 
