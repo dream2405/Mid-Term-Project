@@ -12,6 +12,12 @@
     </header>
     <th:block th:replace="~{fragments/nav :: nav}"></th:block>
     <main>
+        <div class="container" th:if="${tabMenu == 'intro'}">
+            <br>
+            <br>
+            <br>
+            <img class="rounded mx-auto d-block" width="800rem" src="/img/vide.gif" alt="...">
+        </div>
         <span th:if="${tabMenu == 'history'}">
             <th:block th:replace="~{tabFrag/history :: history}"></th:block>
         </span>

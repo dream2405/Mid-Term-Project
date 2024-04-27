@@ -16,7 +16,6 @@ public class mainViewController {
 
     @GetMapping("/{tabMenu}")
     public String introView(@PathVariable String tabMenu, Model model) {
-        System.out.println(tabMenu);
         model.addAttribute("tabMenu", tabMenu);
 
         return "main";
