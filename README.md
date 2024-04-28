@@ -1,4 +1,13 @@
 # 오픈소스 SW 활용 중간고사 과제
-- ‘Mid-Term-Project’ Repository를 생성해서 작업
-- 최소 15회이상 Commit
-- Github Page사용해서 webpage 운영 또는 외부 서버 구축 가능
+스프링 부트를 사용해 구현한 자기소개 페이지
+
+## 사용 기술
+![spring.png](/spring.png)   
+스프링 부트: 자바 백엔드 프레임워크
+- MVC 아키텍처를 통해 자바로 웹 어플리케이션 구축   
+
+![tl.png](tl.png)   
+타임리프: 서버 사이드 자바 템플릿 엔진
+- 서버 API에서 가져온 데이터를 미리 정의된 Template에 넣어 html을 그려 클라이언트에 전달
+
+## 링크
