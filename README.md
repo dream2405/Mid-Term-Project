@@ -8,7 +8,10 @@
 
 ![tl.png](tl.png)   
 타임리프: 서버 사이드 자바 템플릿 엔진
-- 서버 API에서 가져온 데이터를 미리 정의된 Template에 넣어 html을 그려 클라이언트에 전달
+- 서버 API에서 가져온 데이터를 미리 정의된 Template에 넣어 html을 그려 클라이언트에 전달   
 
+![bootstrap.png](bootstrap-logo-shadow.png)   
+부트스트랩: 프론트엔드 툴킷
+- 프론트 디자인에 사용
 ## 링크
 [웹사이트로 이동](http://115.23.140.43:8080/)
