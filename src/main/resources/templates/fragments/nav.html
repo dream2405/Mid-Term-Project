@@ -21,6 +21,9 @@
             <li class="nav-item">
                 <a class="nav-link" th:classappend="${tabMenu == 'link' ? 'active' : ''}" th:href="@{/link}">링크</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${tabMenu == 'board' ? 'active' : ''}" th:href="@{/board}">게시판</a>
+            </li>
         </ul>
     </div>
 </nav>
