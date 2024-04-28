@@ -14,6 +14,11 @@ public class TextDataService {
     private TextDataRepo textDataRepo;
 
     @Autowired
+    public TextDataService(TextDataRepo textDataRepo) {
+        this.textDataRepo = textDataRepo;
+    }
+
+    @Autowired
     public void setTextDataRepo(TextDataRepo textDataRepo) {
         this.textDataRepo = textDataRepo;
     }

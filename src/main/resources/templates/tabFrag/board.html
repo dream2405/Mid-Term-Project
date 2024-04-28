@@ -8,20 +8,33 @@
 <div class="container" th:fragment="board">
     <br>
     <div class="container border rounded bg-danger-subtle" style="padding: 1rem; width: 60rem">
-        <div class="row g-2 align-items-center">
-            <div class="col-4">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="이름">
+        <!--/*@thymesVar id="textData" type="kr.ac.dankook.ace.oss_project.board.TextData"*/-->
+        <form th:action="@{/board/submit}" method="post" th:object="${textData}">
+            <div class="row g-2 align-items-center">
+                <div class="col-4">
+                    <input type="text" class="form-control" placeholder="이름" th:field="*{userName}" />
+                </div>
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="글 남기기" th:field="*{text}" />
+                </div>
+                <div class="col-1 text-center">
+                    <button type="submit" class="btn btn-secondary">작성</button>
+                </div>
             </div>
-            <div class="col-7">
-                <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="글 남기기">
-            </div>
-            <div class="col-1 text-center">
-                <button type="submit" class="btn btn-secondary">작성</button>
+        </form>
+    </div>
+    <br>
+    <div class="row gy-1">
+        <div class="col-fluid border p-2" style="padding: 1rem; background-color: whitesmoke" th:each="data : ${datas}">
+            <div class="row align-items-center text-center">
+                <div class="col-3 border-end border-dark" th:text="${data.userName}">
+                </div>
+                <div class="col-9" th:text="${data.text}">
+                </div>
             </div>
         </div>
     </div>
     <br>
-
 </div>
 </body>
 </html>
