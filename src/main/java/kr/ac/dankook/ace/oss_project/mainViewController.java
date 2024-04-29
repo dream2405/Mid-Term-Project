@@ -1,7 +1,6 @@
 package kr.ac.dankook.ace.oss_project;
 
 import kr.ac.dankook.ace.oss_project.board.TextData;
-import kr.ac.dankook.ace.oss_project.board.TextDataRepo;
 import kr.ac.dankook.ace.oss_project.board.TextDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,12 +12,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class mainViewController {
-    private TextData textData;
     private TextDataService textDataService;
 
     @Autowired
-    public mainViewController(TextData textData, TextDataService textDataService) {
-        this.textData = textData;
+    public mainViewController(TextDataService textDataService) {
         this.textDataService = textDataService;
     }
 
@@ -45,7 +42,7 @@ public class mainViewController {
     }
 
     @PostMapping("/board/submit")
-    public String submitBoard(@ModelAttribute("formData") TextData textData, Model model) {
+    public String submitBoard(@ModelAttribute("formData") TextData textData) {
         this.textDataService.add(textData);
 
         return "redirect:/board";
